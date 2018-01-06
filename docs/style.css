@@ -1,0 +1,47 @@
+body {
+    font-size: 1.3rem;
+    font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.jumbotron {
+    background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/school.png');
+}
+
+.indicator {
+    margin: 0 5px 0 0;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 20px;
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.online .indicator {
+    background-color: #18bf18;
+}
+
+.offline .indicator {
+    background-color: #ff5d5f;
+}
+
+.offline {
+    display: none;
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
