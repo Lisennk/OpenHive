@@ -1,5 +1,5 @@
 body {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -19,6 +19,13 @@ body {
     border-radius: 20px;
     animation: blink-animation 1s steps(5, start) infinite;
     -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+
+.gen, .gen:focus {
+    padding: 8px !important;
+    background: #fff;
+    border: 1px solid #d7d7d7 !important;
+    height: 240px;
 }
 
 .online .indicator {

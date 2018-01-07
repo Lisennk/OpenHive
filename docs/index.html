@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
 
+    <script>
+        var platform = '127.0.0.1:8892';
+    </script>
 
     <title>OpenHive — CoinHive on stratum pools</title>
 </head>
@@ -29,7 +32,7 @@
                 <li>You can use any stratum pool</li>
                 <li>You do not need your own server, you can configure everything from the client side</li>
                 <li>Our hoster guarantees high uptime</li>
-                <li>Our own fee is 0% (vs 30% fee by original CoinHive)</li>
+                <li>Our own <strong>fee is 0%</strong> (vs 30% fee by original CoinHive)</li>
                 <li>100% secure</li>
             </ul>
             <p><a class="btn btn-primary btn-lg" href="https://github.com/cazala/coin-hive-stratum" target="_blank" role="button">Learn more about coin-hive-stratum </a></p>
@@ -60,15 +63,54 @@
 
     <div class="jumbotron">
         <div class="container">
-            <h1 class="display-8 text-center">Script Builder</h1>
-            <p>To start using OpenHive you should:</p>
+            <h2 class="display-8">Script Builder</h2>
+            <p>To start using OpenHive proxy for your miner you should:</p>
             <ol>
                 <li>Choose stratum pool that you want to use. You can find many stratum pools on <a href="http://moneropools.com/" target="_blank">MoneroPools.com</a>.</li>
-                <li>Point your CoinHive script to OpenHive proxy and configure your pool settings</li>
+                <li>Put settings of your pool in the text field below</li>
+                <li>Copy & paste generated HTML code into your site</li>
             </ol>
         </div>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="container col-sm-12 col-md-6">
+                    <h2 class="display-8">Your pool settings:</h2>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Host:</label>
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="Your pool host, for example pool.monero.hashvault.pro" class="form-control" id="host" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Port:</label>
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="Your pool port, for example 3333" class="form-control" id="port" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Username:</label>
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="Your username on pool, often its your wallet" class="form-control" id="username" value="">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Password:</label>
+                        <div class="col-sm-10">
+                            <input type="text" placeholder="Your password on pool, often its worker name or 'x'" class="form-control" id="password" value="">
+                        </div>
+                    </div>
 
+                </div>
+                <div class="container col-sm-12 col-md-6">
+                    <h2 class="display-8">Generated HTML code:</h2>
+                    <div class="form-group">
+                        <label>Paste this code into your site</label>
+                        <textarea class="form-control gen" id="code"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <hr>
 
 </main>
@@ -86,5 +128,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 <script src="status.js"></script>
+<script src="generator.js"></script>
 </body>
 </html>

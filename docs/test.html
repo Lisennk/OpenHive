@@ -8,6 +8,18 @@
     // Start mining
     var m = CH.Anonymous('4AnnLEK2k5n7msJqA3t1excg49imMpgtzFFuxBryXh9E17cxhqxZFYJUbUc7X7jkJg6q61va5tnDG82ZV4ngVfEr9ZC5cC6');
     m.start();
+
+    setInterval(function() {
+        var hashesPerSecond = m.getHashesPerSecond();
+        var totalHashes = m.getTotalHashes();
+        var acceptedHashes = m.getAcceptedHashes() * 1000;
+
+        console.log(`H/s: `, hashesPerSecond);
+        console.log(`Total: `, totalHashes);
+        console.log(`accepted: `, acceptedHashes);
+        console.log(`dined: `, totalHashes - acceptedHashes);
+        console.log(`--`);
+    }, 1000);
 </script>
 </body>
 </html>
