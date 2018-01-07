@@ -13,14 +13,14 @@
           rel="stylesheet">
 
 
-    <title>Hello, world!</title>
+    <title>OpenHive — CoinHive on stratum pools</title>
 </head>
 <body>
 
 <main role="main">
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron top">
         <div class="container">
             <h1 class="display-3">OpenHive</h1>
             <p>OpenHive is a hosted version of <a href="https://github.com/cazala/coin-hive-stratum" target="_blank">cazala / coin-hive-stratum</a> (CoinHive Stratum Proxy) which allows you to use CoinHive’s JavaScript miner on a custom stratum pool without renting your own server and in just a few clicks.</p>
@@ -37,10 +37,8 @@
     </div>
 
     <div class="container status">
-        <div class="row">
-            <h2>Platform Status</h2>
-        </div>
-        <div class="row online" id="online">
+        <h2 class="display-8">Platform Status</h2>
+        <div class="row online container" id="online">
             <div class="col-md-4">
                 <div class="indicator"></div>
                 OpenHive is online
@@ -54,15 +52,24 @@
                 Connections: <strong id="connections">0</strong>
             </div>
         </div>
-        <div class="row offline" id="offline">
+        <div class="row offline container" id="offline">
             <div class="indicator"></div>
             OpenHive is under maintenance
         </div>
     </div>
 
-        <hr>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-8 text-center">Script Builder</h1>
+            <p>To start using OpenHive you should:</p>
+            <ol>
+                <li>Choose stratum pool that you want to use. You can find many stratum pools on <a href="http://moneropools.com/" target="_blank">MoneroPools.com</a>.</li>
+                <li>Point your CoinHive script to OpenHive proxy and configure your pool settings</li>
+            </ol>
+        </div>
+    </div>
 
-    </div> <!-- /container -->
+    <hr>
 
 </main>
 
