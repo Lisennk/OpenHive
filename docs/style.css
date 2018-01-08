@@ -5,10 +5,21 @@ body {
 
 .top {
     background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/school.png');
+    border-bottom: 1px solid #cdcdcd;
 }
 
-.status {
-    margin-bottom: 2rem;
+.generator {
+    border-bottom: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
+}
+
+.pad-container {
+    padding: 2rem 0;
 }
 
 .indicator {

